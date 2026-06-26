@@ -1,0 +1,63 @@
+:root {
+  /* Colors */
+  --forest-green: #3A5743;
+  --warm-cream: #FAF3E6;
+  --honey-wood: #B8895A;
+  --mustard: #D4A020;
+  --dark-walnut: #2C2118;
+  --soft-sage: #C5D1B8;
+
+  /* Typography */
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  /* Type scale */
+  --text-h1: 3.5rem;
+  --text-h2: 2.25rem;
+  --text-h3: 1.5rem;
+  --text-body: 1.0625rem;
+  --text-small: 0.875rem;
+
+  --leading-h1: 1.1;
+  --leading-h2: 1.2;
+  --leading-h3: 1.3;
+  --leading-body: 1.65;
+  --leading-small: 1.5;
+
+  /* Spacing (8px base unit) */
+  --space-1: 0.5rem;   /* 8px */
+  --space-2: 1rem;     /* 16px */
+  --space-3: 1.5rem;   /* 24px */
+  --space-4: 2rem;     /* 32px */
+  --space-5: 2.5rem;   /* 40px */
+  --space-6: 3rem;     /* 48px */
+  --space-8: 4rem;     /* 64px */
+  --space-10: 5rem;    /* 80px */
+
+  --section-padding-desktop: 5rem;   /* 80px */
+  --section-padding-mobile: 3rem;    /* 48px */
+
+  /* Layout */
+  --max-width: 1200px;
+
+  /* Borders & Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+
+  /* Shadows */
+  --shadow-card: 0 4px 20px rgba(44, 33, 24, 0.08);
+  --shadow-polaroid: 0 6px 24px rgba(44, 33, 24, 0.14);
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+}
+
+/* Mobile type scale overrides */
+@media (max-width: 767px) {
+  :root {
+    --text-h1: 2.25rem;
+    --text-h2: 1.75rem;
+    --text-h3: 1.25rem;
+  }
+}
