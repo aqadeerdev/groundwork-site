@@ -302,3 +302,129 @@
     transform: none;
   }
 }
+
+
+/* About page */
+
+.about-story {
+  background-color: var(--warm-cream);
+}
+
+.about-story__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+}
+
+@media (min-width: 1024px) {
+  .about-story__inner {
+    grid-template-columns: 3fr 2fr;
+    align-items: start;
+  }
+}
+
+.about-story__text p + p {
+  margin-top: var(--space-4);
+}
+
+.about-story__imgs {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.about-story__img {
+  width: 100%;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  object-fit: cover;
+}
+
+.about-story__img:first-child {
+  aspect-ratio: 4 / 3;
+}
+
+.about-story__img:last-child {
+  aspect-ratio: 3 / 2;
+  align-self: flex-end;
+  width: 80%;
+}
+
+.about-values {
+  background-color: var(--soft-sage);
+}
+
+.about-values__heading {
+  margin-bottom: var(--space-8);
+}
+
+.about-values__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+}
+
+@media (min-width: 768px) {
+  .about-values__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.about-value__icon {
+  font-size: 2rem;
+  margin-bottom: var(--space-3);
+}
+
+.about-value__title {
+  font-family: var(--font-display);
+  font-size: var(--text-h3);
+  margin-bottom: var(--space-2);
+  color: var(--forest-green);
+}
+
+.about-value__desc {
+  font-size: var(--text-body);
+  opacity: 0.8;
+  line-height: var(--leading-body);
+}
+
+.about-team {
+  background-color: var(--warm-cream);
+}
+
+.about-team__heading {
+  margin-bottom: var(--space-8);
+}
+
+.about-team__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+}
+
+@media (min-width: 768px) {
+  .about-team__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.team-member__img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: top;
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-3);
+}
+
+.team-member__name {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+}
+
+.team-member__role {
+  font-size: var(--text-small);
+  color: var(--honey-wood);
+  font-weight: 500;
+  margin-top: var(--space-1);
+}
