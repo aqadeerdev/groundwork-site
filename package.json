@@ -1,0 +1,29 @@
+{
+  "name": "Groundwork Website",
+  "version": "1.0.0",
+  "description": "Groundwork cafe website",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "npm-run-all build:css --parallel dev:eleventy dev:css",
+    "build": "npm-run-all build:css build:eleventy build:js",
+    "dev:eleventy": "eleventy --serve --port 8080",
+    "dev:css": "postcss src/css/global.css -o _site/css/global.css --watch",
+    "build:css": "NODE_ENV=production postcss src/css/global.css -o _site/css/global.css",
+    "build:eleventy": "eleventy",
+    "build:js": "find _site/js -maxdepth 1 -name '*.js' | xargs -I{} terser {} -o {} -c -m"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "autoprefixer": "^10.4.0",
+    "cssnano": "^7.0.0",
+    "npm-run-all2": "^6.0.0",
+    "postcss": "^8.4.0",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.0.0",
+    "postcss-nesting": "^13.0.0",
+    "terser": "^5.0.0"
+  }
+}

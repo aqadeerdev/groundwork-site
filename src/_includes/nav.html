@@ -1,0 +1,27 @@
+<nav class="nav" data-nav="{{ 'transparent' if pageId == 'home' else 'solid' }}" aria-label="Main navigation">
+  <div class="container nav__inner">
+    <a href="/" class="nav__wordmark">Groundwork</a>
+    <ul class="nav__links" role="list">
+      <li><a href="/"         class="nav__link{{ ' nav__link--active' if pageId == 'home' }}">Home</a></li>
+      <li><a href="/menu/"    class="nav__link{{ ' nav__link--active' if pageId == 'menu' }}">Menu</a></li>
+      <li><a href="/about/"   class="nav__link{{ ' nav__link--active' if pageId == 'about' }}">About</a></li>
+      <li><a href="/gallery/" class="nav__link{{ ' nav__link--active' if pageId == 'gallery' }}">Gallery</a></li>
+      <li><a href="/contact/" class="nav__link{{ ' nav__link--active' if pageId == 'contact' }}">Contact</a></li>
+    </ul>
+    <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-overlay">
+      <span class="nav__hamburger-bar"></span>
+      <span class="nav__hamburger-bar"></span>
+      <span class="nav__hamburger-bar"></span>
+    </button>
+  </div>
+</nav>
+
+<div class="nav__overlay" id="nav-overlay" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <ul role="list">
+    <li><a href="/"         class="nav__overlay-link">Home</a></li>
+    <li><a href="/menu/"    class="nav__overlay-link">Menu</a></li>
+    <li><a href="/about/"   class="nav__overlay-link">About</a></li>
+    <li><a href="/gallery/" class="nav__overlay-link">Gallery</a></li>
+    <li><a href="/contact/" class="nav__overlay-link">Contact</a></li>
+  </ul>
+</div>
