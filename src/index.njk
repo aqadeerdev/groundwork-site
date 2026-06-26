@@ -2,6 +2,9 @@
 layout: base.njk
 title: Groundwork - Neighbourhood Cafe & Bakery
 pageId: home
+metaDescription: "A neighbourhood cafe and bakery on Vine Lane, Clifton. We bake everything from scratch every morning — sourdough, croissants, cinnamon rolls — and brew coffee the way it deserves to be brewed."
+canonicalUrl: /
+ogImage: /images/hero.webp
 ---
 
 <main id="main-content">
@@ -133,3 +136,43 @@ pageId: home
   </section>
 
 </main>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "Groundwork",
+  "url": "https://groundworkcafe.pk",
+  "telephone": "+92213456789",
+  "email": "hello@groundworkcafe.pk",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "23 Vine Lane",
+    "addressLocality": "Clifton",
+    "addressRegion": "Karachi",
+    "addressCountry": "PK"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 24.8154,
+    "longitude": 67.0300
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:00",
+      "closes": "21:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday","Sunday"],
+      "opens": "09:00",
+      "closes": "22:00"
+    }
+  ],
+  "image": "https://groundworkcafe.pk/images/hero.webp",
+  "servesCuisine": ["Coffee", "Bakery"],
+  "priceRange": "Rs. 350 - Rs. 750"
+}
+</script>

@@ -3,6 +3,9 @@ layout: base.njk
 title: Contact | Groundwork - Neighbourhood Cafe & Bakery
 pageId: contact
 pageScript: /js/form.js
+metaDescription: "Visit us at 23 Vine Lane, Clifton, Karachi. Open Monday to Friday 8am-9pm, weekends 9am-10pm. Get in touch for catering, events, or just to say hello."
+canonicalUrl: /contact/
+ogImage: /images/hero.webp
 ---
 
 <main id="main-content">
@@ -131,3 +134,43 @@ pageScript: /js/form.js
   </section>
 
 </main>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "Groundwork",
+  "url": "https://groundworkcafe.pk",
+  "telephone": "+92213456789",
+  "email": "hello@groundworkcafe.pk",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "23 Vine Lane",
+    "addressLocality": "Clifton",
+    "addressRegion": "Karachi",
+    "addressCountry": "PK"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 24.8154,
+    "longitude": 67.0300
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:00",
+      "closes": "21:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday","Sunday"],
+      "opens": "09:00",
+      "closes": "22:00"
+    }
+  ],
+  "image": "https://groundworkcafe.pk/images/hero.webp",
+  "servesCuisine": ["Coffee", "Bakery"],
+  "priceRange": "Rs. 350 - Rs. 750"
+}
+</script>
