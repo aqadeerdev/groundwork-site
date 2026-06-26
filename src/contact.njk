@@ -1,0 +1,133 @@
+---
+layout: base.njk
+title: Contact | Groundwork - Neighbourhood Cafe & Bakery
+pageId: contact
+pageScript: /js/form.js
+---
+
+<main id="main-content">
+
+  <!-- Page banner -->
+  <header class="page-banner" aria-label="Contact page header">
+    <img
+      class="page-banner__img"
+      src="https://picsum.photos/seed/contact-banner/1600/600"
+      alt="The Groundwork entrance on Vine Lane with potted plants flanking the door"
+      fetchpriority="high"
+    >
+    <div class="page-banner__overlay" aria-hidden="true"></div>
+    <div class="container page-banner__content">
+      <h1 class="page-banner__heading">Come Say Hello</h1>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <section class="contact-main section" aria-label="Contact information and form">
+    <div class="container">
+      <div class="contact-main__inner">
+
+        <!-- Info column -->
+        <div class="contact-info">
+          <h2 class="contact-info__heading">Find us, call us, write to us.</h2>
+
+          <div class="contact-info__block">
+            <p class="contact-info__label">Address</p>
+            <p class="contact-info__text">23 Vine Lane, Clifton<br>Karachi, Pakistan</p>
+          </div>
+
+          <div class="contact-info__block">
+            <p class="contact-info__label">Hours</p>
+            <dl class="contact-info__hours">
+              <dt>Monday – Friday</dt>
+              <dd>8:00 am – 9:00 pm</dd>
+              <dt>Saturday – Sunday</dt>
+              <dd>9:00 am – 10:00 pm</dd>
+            </dl>
+          </div>
+
+          <div class="contact-info__block">
+            <p class="contact-info__label">Phone</p>
+            <p class="contact-info__text">
+              <a href="tel:+922134567890">+92 21 3456 7890</a>
+            </p>
+          </div>
+
+          <div class="contact-info__block">
+            <p class="contact-info__label">Email</p>
+            <p class="contact-info__text">
+              <a href="mailto:hello@groundworkcafe.pk">hello@groundworkcafe.pk</a>
+            </p>
+          </div>
+
+          <div class="contact-info__block">
+            <p class="contact-info__label">Follow Along</p>
+            <div class="contact-info__social">
+              <a href="#" class="contact-info__social-link" aria-label="Groundwork on Instagram">Instagram</a>
+              <a href="#" class="contact-info__social-link" aria-label="Groundwork on Facebook">Facebook</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form column -->
+        <div>
+          <div id="form-wrap">
+            <form id="contact-form" class="form" novalidate>
+
+              <!-- Web3Forms access key -->
+              <input type="hidden" name="access_key" value="2bd35bde-e2ca-40b8-8974-028fe031cca1">
+              <input type="hidden" name="subject" value="New message from Groundwork website">
+              <input type="checkbox" name="botcheck" style="display:none">
+
+              <div class="form__group">
+                <label class="form__label" for="name">Name</label>
+                <input class="form__input" type="text" id="name" name="name" autocomplete="name" required>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="email">Email</label>
+                <input class="form__input" type="email" id="email" name="email" autocomplete="email" required>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="subject">Subject</label>
+                <select class="form__select" id="subject" name="enquiry_type" required>
+                  <option value="" disabled selected>Select a topic</option>
+                  <option value="General Enquiry">General Enquiry</option>
+                  <option value="Catering">Catering</option>
+                  <option value="Private Event">Private Event</option>
+                  <option value="Feedback">Feedback</option>
+                </select>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="message">Message</label>
+                <textarea class="form__textarea" id="message" name="message" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary">Send Message</button>
+
+            </form>
+          </div>
+
+          <div class="form__success" id="form-success" role="alert">
+            <p class="form__success-heading">Message sent.</p>
+            <p>Thanks for reaching out - we'll get back to you within a day or two. In the meantime, the coffee is always on.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="contact-map" aria-label="Map showing Groundwork's location">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28971.347883691877!2d66.97988748550414!3d24.815358384090093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33d90c67b8961%3A0x67d049ad87586653!2z2qnZhNmB2bnZhiDYp9mGINqv24zYs9m5INuB2KfYpNizIENsaWZ0b24gaW5uIEd1ZXN0IEhvdXNl!5e0!3m2!1sen!2s!4v1782495005871!5m2!1sen!2s"
+      title="Map showing Groundwork cafe location in Clifton, Karachi"
+      loading="lazy"
+      allowfullscreen
+      referrerpolicy="strict-origin-when-cross-origin">
+    </iframe>
+  </section>
+
+</main>
