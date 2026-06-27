@@ -451,11 +451,15 @@
   color: var(--dark-walnut);
   border-radius: 50%;
   font-size: 1.25rem;
-  box-shadow: var(--shadow-card);
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(44, 33, 24, 0.18);
   opacity: 0;
   pointer-events: none;
   transform: translateY(8px);
-  transition: opacity var(--transition-base), transform var(--transition-base);
+  transition: opacity var(--transition-base),
+              transform var(--transition-base),
+              box-shadow var(--transition-fast),
+              background-color var(--transition-fast);
 }
 
 .back-to-top--visible {
@@ -466,6 +470,13 @@
 
 .back-to-top:hover {
   background-color: #bf8f1a;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(44, 33, 24, 0.24);
+}
+
+.back-to-top:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 16px rgba(44, 33, 24, 0.18);
 }
 
 
