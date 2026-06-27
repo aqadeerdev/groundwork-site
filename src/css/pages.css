@@ -73,8 +73,10 @@
   margin-top: var(--space-3);
 }
 
-.intro__img {
+.intro__img,
+picture:has(.intro__img) {
   width: 100%;
+  height: auto;
   aspect-ratio: 4 / 3;
   object-fit: cover;
   border-radius: var(--radius-md);
@@ -215,8 +217,10 @@
   margin-bottom: var(--space-2);
 }
 
-.location__map {
+.location__map,
+picture:has(.location__map) {
   width: 100%;
+  height: auto;
   aspect-ratio: 4 / 3;
   object-fit: cover;
   border-radius: var(--radius-md);
@@ -280,6 +284,7 @@
 .menu-polaroid {
   display: block;
   width: clamp(160px, 28%, 240px);
+  height: auto;
   margin-block: var(--space-8);
   box-shadow: var(--shadow-polaroid);
   border-radius: var(--radius-sm);
@@ -335,16 +340,19 @@
 
 .about-story__img {
   width: 100%;
+  height: auto;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-card);
   object-fit: cover;
 }
 
-.about-story__img:first-child {
+.about-story__img--primary {
+  height: auto;
   aspect-ratio: 4 / 3;
 }
 
-.about-story__img:last-child {
+.about-story__img--secondary,
+picture:has(.about-story__img--secondary) {
   aspect-ratio: 3 / 2;
   align-self: flex-end;
   width: 80%;
@@ -410,6 +418,7 @@
 
 .team-member__img {
   width: 100%;
+  height: auto;
   aspect-ratio: 3 / 4;
   object-fit: cover;
   object-position: top;
@@ -464,6 +473,7 @@
 
 .gallery-item img {
   width: 100%;
+  height: auto;
   display: block;
   transition: transform var(--transition-base);
 }
