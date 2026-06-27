@@ -346,7 +346,19 @@
 }
 
 .card__body {
-  padding: var(--space-4);
+  padding: var(--space-2);
+  padding-bottom: var(--space-3);
+}
+
+.card__category {
+  font-size: var(--text-small);
+  color: var(--warm-cream);
+  text-transform: uppercase;
+  background-color: var(--honey-wood);
+  padding-inline: var(--space-1);
+  margin-bottom: var(--space-2);
+  width: fit-content;
+  border-radius: 4px;
 }
 
 .card__title {
@@ -365,7 +377,7 @@
 .card__price {
   font-weight: 600;
   font-size: var(--text-small);
-  color: var(--forest-green);
+  color: var(--dark-walnut);
 }
 
 
