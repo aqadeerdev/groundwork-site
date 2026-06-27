@@ -556,14 +556,27 @@ picture:has(.about-story__img--secondary) {
 .contact-info__social-link {
   font-weight: 500;
   color: var(--forest-green);
-  border-bottom: 1px solid var(--honey-wood);
-  padding-bottom: 1px;
-  transition: color var(--transition-fast), border-color var(--transition-fast);
+  position: relative;
+  transition: color var(--transition-fast);
+}
+
+.contact-info__social-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--mustard);
+  transition: width var(--transition-fast);
 }
 
 .contact-info__social-link:hover {
   color: var(--mustard);
-  border-color: var(--mustard);
+}
+
+.contact-info__social-link:hover::after {
+  width: 100%;
 }
 
 .contact-map {

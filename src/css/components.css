@@ -199,12 +199,28 @@
   font-size: var(--text-small);
   font-weight: 500;
   opacity: 0.85;
+  position: relative;
   transition: opacity var(--transition-fast), color var(--transition-fast);
+}
+
+.footer__social-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--mustard);
+  transition: width var(--transition-fast);
 }
 
 .footer__social-link:hover {
   opacity: 1;
   color: var(--mustard);
+}
+
+.footer__social-link:hover::after {
+  width: 100%;
 }
 
 .footer__bottom {
