@@ -156,7 +156,7 @@ picture:has(.intro__img) {
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--honey-wood);
+  color: var(--dark-walnut);
 }
 
 
@@ -185,7 +185,8 @@ picture:has(.intro__img) {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--mustard);
+  color: var(--warm-cream);
+  opacity: 0.75;
   margin-bottom: var(--space-3);
 }
 
@@ -277,7 +278,7 @@ picture:has(.location__map) {
 .menu-item__price {
   font-weight: 600;
   font-size: var(--text-body);
-  color: var(--honey-wood);
+  color: var(--forest-green);
   white-space: nowrap;
 }
 
@@ -433,7 +434,7 @@ picture:has(.about-story__img--secondary) {
 
 .team-member__role {
   font-size: var(--text-small);
-  color: var(--honey-wood);
+  color: var(--forest-green);
   font-weight: 500;
   margin-top: var(--space-1);
 }
@@ -516,7 +517,7 @@ picture:has(.about-story__img--secondary) {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--honey-wood);
+  color: var(--forest-green);
   margin-bottom: var(--space-2);
 }
 

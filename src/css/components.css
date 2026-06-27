@@ -173,7 +173,7 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--mustard);
+  color: var(--warm-cream);
   margin-bottom: var(--space-3);
 }
 
@@ -338,7 +338,7 @@
 .card__price {
   font-weight: 600;
   font-size: var(--text-small);
-  color: var(--honey-wood);
+  color: var(--forest-green);
 }
 
 
