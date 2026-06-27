@@ -247,11 +247,13 @@
   border-radius: var(--radius-sm);
   transition: background-color var(--transition-fast),
               color var(--transition-fast),
-              transform var(--transition-fast);
+              transform var(--transition-fast),
+              box-shadow var(--transition-fast);
 }
 
 .btn:active {
   transform: translateY(1px);
+  box-shadow: none;
 }
 
 .btn--primary {
@@ -261,6 +263,8 @@
 
 .btn--primary:hover {
   background-color: #bf8f1a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(44, 33, 24, 0.18);
 }
 
 .btn--outline {
@@ -272,6 +276,7 @@
 .btn--outline:hover {
   background-color: var(--warm-cream);
   color: var(--dark-walnut);
+  transform: translateY(-2px);
 }
 
 
