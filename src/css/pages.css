@@ -5,7 +5,7 @@
   height: 100svh;
   min-height: 560px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   overflow: hidden;
 }
 
@@ -32,21 +32,37 @@
 .hero__content {
   position: relative;
   z-index: 1;
-  padding-bottom: var(--space-10);
   max-width: 680px;
+  margin-inline: auto;
+  text-align: center;
 }
 
 .hero__heading {
   color: var(--warm-cream);
+  font-size: clamp(2.75rem, 7vw, 5.5rem);
   margin-bottom: var(--space-3);
 }
 
 .hero__sub {
   color: var(--warm-cream);
   font-size: 1.125rem;
+  font-weight: 500;
   opacity: 0.9;
   margin-bottom: var(--space-5);
   max-width: 480px;
+  margin-inline: auto;
+}
+
+@media (min-width: 1024px) {
+  .hero__content {
+    max-width: 900px;
+  }
+
+  .hero__sub {
+    font-size: 1.375rem;
+    max-width: 620px;
+    margin-bottom: var(--space-6);
+  }
 }
 
 
