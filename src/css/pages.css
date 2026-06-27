@@ -85,6 +85,10 @@
   }
 }
 
+.intro__text #intro-heading {
+  margin-bottom: var(--space-3);
+}
+
 .intro__text p + p {
   margin-top: var(--space-3);
 }
