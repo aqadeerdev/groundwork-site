@@ -2,9 +2,9 @@
 layout: base.njk
 title: Groundwork - Neighbourhood Cafe & Bakery
 pageId: home
-metaDescription: "A neighbourhood cafe and bakery on Vine Lane, Clifton. We bake everything from scratch every morning — sourdough, croissants, cinnamon rolls — and brew coffee the way it deserves to be brewed."
+metaDescription: "A neighbourhood cafe and bakery on Vine Lane, Clifton. We bake everything from scratch every morning - sourdough, croissants, cinnamon rolls - and brew coffee the way it deserves to be brewed."
 canonicalUrl: /
-ogImage: /images/hero.webp
+ogImage: /images/hero.jpg
 ---
 
 <main id="main-content">
@@ -13,9 +13,10 @@ ogImage: /images/hero.webp
   <section class="hero" aria-label="Hero">
     <img
       class="hero__img"
-      src="https://picsum.photos/seed/cafe-hero/1600/900"
+      src="/images/hero.jpg"
       alt="Warm, plant-filled cafe interior with wooden tables and soft golden light"
       fetchpriority="high"
+      loading="eager"
     >
     <div class="hero__overlay" aria-hidden="true"></div>
     <div class="container">
@@ -39,7 +40,7 @@ ogImage: /images/hero.webp
         </div>
         <img
           class="intro__img"
-          src="https://picsum.photos/seed/cafe-counter/800/600"
+          src="/images/intro-counter.jpg"
           alt="The Groundwork counter, with espresso machine and a row of ceramic mugs"
           loading="lazy"
         >
@@ -56,7 +57,7 @@ ogImage: /images/hero.webp
         <article class="card">
           <img
             class="card__img"
-            src="https://picsum.photos/seed/house-blend/600/450"
+            src="/images/featured-house-blend.jpg"
             alt="A cup of house blend coffee with a rich crema on a wooden table"
             loading="lazy"
           >
@@ -70,7 +71,7 @@ ogImage: /images/hero.webp
         <article class="card">
           <img
             class="card__img"
-            src="https://picsum.photos/seed/almond-croissant/600/450"
+            src="/images/featured-croissant.jpg"
             alt="A golden almond croissant dusted with powdered sugar and flaked almonds"
             loading="lazy"
           >
@@ -84,7 +85,7 @@ ogImage: /images/hero.webp
         <article class="card">
           <img
             class="card__img"
-            src="https://picsum.photos/seed/rose-latte/600/450"
+            src="/images/featured-rose-latte.jpg"
             alt="An iced rose latte in a tall glass with a soft pink hue"
             loading="lazy"
           >
@@ -127,7 +128,7 @@ ogImage: /images/hero.webp
         </div>
         <img
           class="location__map"
-          src="https://picsum.photos/seed/clifton-map/600/450"
+          src="/images/location-map.jpg"
           alt="Illustrated map showing Groundwork's location on Vine Lane, Clifton, Karachi"
           loading="lazy"
         >
@@ -171,7 +172,7 @@ ogImage: /images/hero.webp
       "closes": "22:00"
     }
   ],
-  "image": "https://groundworkcafe.pk/images/hero.webp",
+  "image": "https://groundworkcafe.pk/images/hero.jpg",
   "servesCuisine": ["Coffee", "Bakery"],
   "priceRange": "Rs. 350 - Rs. 750"
 }
