@@ -346,12 +346,14 @@ picture:has(.location__map) {
 @media (min-width: 1024px) {
   .about-story__inner {
     grid-template-columns: 3fr 2fr;
-    align-items: start;
+    align-items: center;
   }
 }
 
-.about-story__text p + p {
-  margin-top: var(--space-4);
+.about-story__text {
+  p + p, #story-heading {
+    margin-bottom: var(--space-4);
+  }
 }
 
 .about-story__imgs {
@@ -385,7 +387,9 @@ picture:has(.about-story__img--secondary) {
 }
 
 .about-values__heading {
-  margin-bottom: var(--space-8);
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-2);
+  border-bottom: 4px solid var(--mustard);
 }
 
 .about-values__grid {
@@ -401,8 +405,7 @@ picture:has(.about-story__img--secondary) {
 }
 
 .about-value__icon {
-  font-size: 2rem;
-  margin-bottom: var(--space-3);
+  margin-bottom: var(--space-2);
 }
 
 .about-value__title {
@@ -413,7 +416,7 @@ picture:has(.about-story__img--secondary) {
 }
 
 .about-value__desc {
-  font-size: var(--text-body);
+  font-size: var(--text-md);
   opacity: 0.8;
   line-height: var(--leading-body);
 }
