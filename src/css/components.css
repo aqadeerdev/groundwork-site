@@ -297,7 +297,7 @@
   display: inline-flex;
   align-items: center;
   gap: var(--space-1);
-  padding: 0.75rem 1.75rem;
+  padding: 0.5rem 1.25rem;
   font-family: var(--font-body);
   font-size: var(--text-small);
   font-weight: 600;
@@ -450,7 +450,11 @@
 .form {
   display: flex;
   flex-direction: column;
-  gap: var(--space-4);
+  gap: var(--space-3);
+}
+
+.form .btn {
+  width: fit-content;
 }
 
 .form__group {
@@ -461,16 +465,15 @@
 
 .form__label {
   font-size: var(--text-small);
-  font-weight: 500;
+  font-weight: 600;
   color: var(--dark-walnut);
   letter-spacing: 0.02em;
 }
 
 .form__input,
-.form__select,
 .form__textarea {
-  padding: 0.75rem 1rem;
-  font-size: var(--text-body);
+  padding: 0.25rem 0.5rem;
+  font-size: var(--text-small);
   color: var(--dark-walnut);
   background-color: var(--warm-cream);
   border: 1.5px solid var(--honey-wood);
@@ -480,15 +483,14 @@
 }
 
 .form__input:focus,
-.form__select:focus,
 .form__textarea:focus {
   outline: none;
-  border-color: var(--forest-green);
+  border: 1.5px solid var(--forest-green);
 }
 
 .form__textarea {
   resize: vertical;
-  min-height: 140px;
+  min-height: 120px;
 }
 
 .form__success {
