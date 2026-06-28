@@ -199,10 +199,11 @@
   opacity: 0.85;
 }
 
-.footer__phone, .footer__email {
+.footer__phone a, .footer__email a {
   display: flex;
   gap: var(--space-1);
   align-items: center;
+  width: fit-content;
   margin: var(--space-1) 0;
   transition: color var(--transition-fast), opacity var(--transition-fast);
 }
@@ -254,6 +255,7 @@
 .footer__social-link {
   display: flex;
   gap: 4px;
+  align-items: center;
   font-size: var(--text-small);
   font-weight: 500;
   opacity: 0.85;
