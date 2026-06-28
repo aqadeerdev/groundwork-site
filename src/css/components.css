@@ -495,7 +495,7 @@
 
 .form__success {
   display: none;
-  padding: var(--space-6);
+  padding: var(--space-4) var(--space-6);
   text-align: center;
   background-color: var(--soft-sage);
   border-radius: var(--radius-md);
@@ -510,6 +510,10 @@
   font-size: var(--text-h3);
   margin-bottom: var(--space-2);
   color: var(--forest-green);
+}
+
+.form__success-message {
+  font-size: var(--text-md);
 }
 
 /* Back To Top */
