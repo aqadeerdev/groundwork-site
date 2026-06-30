@@ -27,6 +27,7 @@
   --leading-small: 1.5;
 
   /* Spacing (8px base unit) */
+  --space-sm: 0.25rem;
   --space-1: 0.5rem;   /* 8px */
   --space-2: 1rem;     /* 16px */
   --space-3: 1.5rem;   /* 24px */
