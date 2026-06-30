@@ -478,7 +478,7 @@
   font-size: var(--text-small);
   color: var(--dark-walnut);
   background-color: var(--warm-cream);
-  border: 1.5px solid var(--honey-wood);
+  border: 1.5px solid var(--dark-walnut);
   border-radius: var(--radius-sm);
   transition: border-color var(--transition-fast);
   width: 100%;
@@ -487,7 +487,7 @@
 .form__input:focus,
 .form__textarea:focus {
   outline: none;
-  border: 1.5px solid var(--forest-green);
+  border: 1.5px solid var(--honey-wood);
 }
 
 .form__textarea {
