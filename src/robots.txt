@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://groundworkcafe.pk/sitemap.xml
+Sitemap: https://groundwork.aqadeer.dev/sitemap.xml
