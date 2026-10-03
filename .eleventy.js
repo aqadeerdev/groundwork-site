@@ -26,6 +26,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
+  eleventyConfig.addPassthroughCopy("src/google1ed404c3b0ca0cc3.html");
 
   // Tell 11ty to rebuild when CSS source changes
   // (PostCSS handles the actual compilation separately)
